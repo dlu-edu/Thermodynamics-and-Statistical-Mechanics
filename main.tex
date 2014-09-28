@@ -1,0 +1,65 @@
+\documentclass[a4paper,titlepage]{caspset}
+\usepackage{mathrsfs}
+\usepackage{pgfpages}
+%\usepackage[left=0.1in,right=0.1in,top=0.1in,bottom=0.45in]{geometry}
+%\usepackage[frame,center,noinfo]{crop}
+%\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm]
+\usepackage{fancyhdr}
+% set 1-inch margins in the document
+\usepackage[left=0.75in,right=0.75in,top=1.2in,bottom=1in]{geometry}
+%\usepackage[left=0.2in,right=0.2in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{lastpage}
+% include this if you want to import graphics files with /includegraphics
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{pdfpages}
+\usepackage[toc,page,title,titletoc,header]{appendix}
+\usepackage[unicode]{hyperref}
+%\newcommand{\chapter}[1]{\begin{center}\large\sffamily{#1}\end{center}}
+\usepackage{multicol} 
+\usepackage{titlesec}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xeCJK}
+%\usepackage{fontspec}
+\setCJKmainfont[BoldFont=simhei.ttf]{simsun.ttf}
+\setCJKsansfont{simhei.ttf}
+\setCJKmonofont{simfang.ttf}
+
+%\setCJKmainfont{Adobe Song Std}
+%\setCJKmainfont[BoldFont=Adobe Heiti Std]{Adobe Song Std}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\graphicspath{{figures/}}
+\renewcommand\refname{\bf 参考文献}
+\renewcommand\contentsname{\bf 目 \ \ \ 录}
+\renewcommand\figurename{\bf 图}
+\renewcommand\tablename{\bf 表}
+\renewcommand\appendixname{\bf 附录}
+\renewcommand{\appendixpagename}{附录}
+\def\dbar{{\mathchar'26\mkern-10mu \mathrm{d}}}
+\def\hbar{{\mathchar'26\mkern-10mu h}}
+\def\d{\mathrm{d}}
+
+
+\pagestyle{fancy}
+\fancyhead{} % clear all fields 
+\lhead{周吕文}
+\chead{物理学院: 热力学统计物理} 
+\rhead{第\ \thepage\ 页, ~共\ \protect\pageref{LastPage}\ 页} 
+\begin{document}
+\title{物理学06级热力学统计复习材料\\(不含计算和证明)
+ \vspace{-20pt}}
+\author{{\Large 授课老师: 姜良萍}\\ \vspace{50pt}\\ 周吕文\\ \href{mailto:zhou.lv.wen@gmail.com}{zhou.lv.wen@gmail.com}\\ \vspace{50pt}}
+\date{大连大学物理学院\\2008年01月02日}
+\maketitle
+
+\tableofcontents
+
+\titleformat{\section}{\centering\Large\bfseries}{第\,\thesection\,章}{1em}{}
+\newpage
+\input{chapters}
+
+\end{document}
+

@@ -1,0 +1,694 @@
+\section{热力学的基本规律}
+\subsection{平衡态}
+系统的各种宏观性质在长时间内不发生任何变化, 这样的状态称为热力学平衡态. 
+
+\subsection{什么样的系统是简单系统}
+只需要体积和压强两个状态参量便可以确定系统的状态, 我们称这样的系统为简单系统.
+
+\subsection{热平衡定律(第零定律)及意义}
+\begin{itemize}
+\item \textbf{热平衡定律(第零定律)}: 如果两个物体各自与第三个物体达到热平衡, 它们彼此也必处在热平衡. 
+\item \textbf{意义}: 根据热平衡定律可以证明处在平衡态下的系统态函数温度的存在. 热平衡定律不仅给出了温度的概念, 而且指明了比较温度的方法. 
+\end{itemize}
+
+\subsection{三种系数}
+体胀系数$\alpha$
+\[
+\alpha=\frac{1}{V}\Big(\frac{\partial V}{\partial T}\Big)_p
+\]
+压强系数$\beta$
+\[
+\beta=\frac{1}{p}\Big(\frac{\partial p}{\partial T}\Big)_V
+\]
+等温压缩系数$\kappa_T$
+\[
+\kappa_T=\frac{1}{V}\Big(\frac{\partial V}{\partial p}\Big)_T
+\]
+\textbf{三种系数的关系}: 由于$p$, $V$, $T$三个变是之间存在函数关系$f(p,V,T)=0$(简单系统的物态方程), 其偏导数之间将存在下述关系
+\[
+\Big(\frac{\partial V}{\partial p}\Big)_T\Big(\frac{\partial
+p}{\partial T}\Big)_V\Big(\frac{\partial T}{\partial V}\Big)_p=-1
+\]
+因此$\alpha$, $\beta$ , $\kappa_t$ 满足
+\[
+\alpha=\kappa_t\beta p
+\]
+
+\subsection{物态方程}
+简单系统的物态方程的一般形式
+\[
+f(p,V,T)=0
+\]
+理想气体的物态方程
+\[
+pV=nRT
+\]
+范氏方程
+\[
+\Big(p+\frac{an^2}{V^2}\Big)(V-nb)=nRT
+\]
+\subsection{广延量和强度量}
+\begin{itemize}
+\item \textbf{广延量}: 与系统的质量或物质的量成正比的热力学量. 
+\item \textbf{强度量}: 与系统的质量或物质的量无关的热力学量. 
+\end{itemize}
+\subsection{功的表达式}
+
+\begin{enumerate}
+\item 在准静态过程\footnote{什么是准静态见课本P18}中, 外界对系统所作的功可以表示为
+\[
+\textrm{d}\!\!\!^-W=-V\textrm{d}V
+\]
+如果系统由$V_A$变到$V_B$, 则外界对系统所作的功等于上式积分
+\[
+W=-\int_{V_A}^{V_B}p\textrm{d}V
+\]
+
+\item 磁化过程功的形式\footnote{推导见课本p23}:
+\[
+\textrm{d}\!\!\!^-W=V\textrm{d}\Big(\frac{\mu_0\mathscr{H}^2}{2}\Big)+\mu_0V\mathscr{H}\textrm{d}\mathscr{M}
+\]
+
+\item 准静态过程中功的一般表达式
+\[
+\textrm{d}\!\!\!^-W=\sum_iY_i\textrm{d}y_i
+\]
+\end{enumerate}
+
+
+\subsection{热力学三定律}
+\begin{enumerate}
+\item 热力学第一定律(能量定恒定律): 自然界一切物质都具有能量, 能量有各种不同的形式, 
+可以从一种形式转化为另一形式, 从一个物体传递到另一个物体, 在传递与转化中能量
+的数量不变. 另一个表述形式: 第一类永动机是不可能造成的. 数学形式为: 
+\[
+\textrm{d}U=\textrm{d}\!\!\!^-Q+\textrm{d}\!\!\!^-W
+\]
+
+\item 热力学第二定律(两种表述形)
+\begin{itemize}
+\item 克氏表述: 不可能把热量从低温物体传到高温物体而不引起其它变化. 
+\item 开氏表述: 不可能从单一热源吸热使之完全变成有用的功而不引起其它变化. (第二类永动机是不可能造成的)
+\end{itemize}
+数学表达形式: 
+\[
+\oint\frac{\textrm{d}\!\!\!^-Q}{T}\leq 0
+\]
+
+\item 热力学第三定律
+\end{enumerate}
+
+\subsection{热容量与焓}
+等压过程中有: 
+\[
+C_p=\lim_{\Delta T\rightarrow 0} \Big(\frac{\Delta Q}{\Delta T
+}\Big)_p =\lim_{\Delta T\rightarrow 0} \Big(\frac{\Delta U+p\Delta
+V }{\Delta T }\Big)_p =\Big(\frac{\partial U}{\partial
+T}\Big)_p+p\Big(\frac{\partial V}{\partial T}\Big)_p
+\]
+引进态函数$H$, 名为焓: 
+\[
+H=U+pV \ \ \ \Delta H=\Delta U+p\Delta V
+\]
+则$C_p$可表示为
+\[
+C_p=\Big(\frac{\partial H}{\partial T}\Big)_p
+\]
+
+
+\subsection{理想气体的定义}
+
+\begin{itemize}
+\item 宏观: 内能只是温度的函数, 与体积无关的气体. 
+\item 微观: 气体足够稀薄, 分子间的平均距离足够大, 相互作用能量可以忽略, 内能就与体积无关. 
+\end{itemize}
+对于理想气体有
+\[
+C_V=\frac{\textrm{d}U}{\textrm{d}T} \ \
+C_p=\frac{\textrm{d}H}{\textrm{d}T}
+\]
+并且可以证明(证明过程见课本P31): $C_p-C_V=nR$
+
+\subsection{理想气体的四种过程}
+%以理想气体的卡诺循环来说明理想气体的四种过程
+\begin{itemize}
+\item 等温膨胀过程: 气体从状态$(p_1,V_1,T_1)$等温膨胀而达到状态$(p_2,V_2,T_1)$, 在这过程中外界做功
+\[
+W=-\int_{V_1}^{V_2}p\textrm{d}V=-C\int_{V_1}^{V_2}\frac{\textrm{d}V}{V}=-RT\ln\frac{V_2}{B_1}
+\]
+由于理想气体的\textbf{等温}膨胀过程中内能不变, 所以气体从外办吸收的热量为
+\[
+Q=-W=RT\ln\frac{V_2}{B_1}
+\]
+
+\item 绝热膨胀过程: 气体从状态$(p_1,V_1,T)$等温膨胀而达到状态$(p_2,V_2,T)$, 在这过程中外界做功
+\[
+W=-\int_{V_1}^{V_2}p\textrm{d}V=-C\int_{V_1}^{V_2}\frac{\textrm{d}V}{V^r}=\frac{C}{r-1}\Big(\frac{1}{V_2^{r-1}}-\frac{1}{V_1^{r-1}}\Big)
+\]
+但$p_1V_1^r=p_2V_2^r=C$,所以上式可以化为
+\[
+W=\frac{p_2V_2-p_1V_1}{r-1}=\frac{R(T_2-T_1)}{r-1}=C_V(T_2-T_1)
+\]
+由于是\textbf{绝热}过程, 故从外界收热$Q=0$. 
+
+\item 等温压缩过程: 与等温膨胀过程类似. 
+\item 绝热压缩过程: 与绝热膨胀过程类似. 
+\end{itemize}
+
+\subsection{克劳修斯等式和不等式}
+一个系统在一个循环过程中分别从$T_1$和$T_2$热源吸收的热量分别为$Q_1$和$Q_2$, 则有以下关系
+\[
+\frac{Q_1}{T_1}+\frac{Q_2}{T_2}\leq 0
+\]
+上述称之为克劳修斯等式和不等式. 可推广为$n$个热源的情形: $\sum_{i=1}^n\frac{Q_i}{T_i}\leq
+0 $
+
+\subsection{熵}
+$A$和$B$是系统的两个平衡态. 则熵由下式定义
+\[
+S_B-S_A=\int_A^B\frac{\textrm{d}\!\!\!^-Q}{T}
+\]
+微分形式
+\[
+\textrm{d}S=\frac{\textrm{d}\!\!\!^-Q}{T}
+\]
+由$\textrm{d}U=\textrm{d}\!\!\!^-Q+\textrm{d}\!\!\!^-W$, 
+在可逆过程中, 如果只有体积变化功, 则有$\textrm{d}\!\!\!^-W=-p\textrm{d}V$所以有
+\[
+\textrm{d}S=\frac{\textrm{d}U+p\textrm{d}V}{T} \ \ \textrm{或} \ \
+\textrm{d}U=T\textrm{d}S-p\textrm{d}V
+\]
+\begin{itemize}
+\item 理想气体熵变: 对于$n$mol理想气体, 熵可表示为
+\[
+S=nC_{V,m}\ln T+nR\ln V+S_0 \ \ \textrm{或} \ \ S=nC_{p,m}\ln
+T+nR\ln p+S_0'
+\]
+其中$S_0=n(S_{m0}-R\ln n)$,注意$S_0\neq S_0'$
+
+\item 熵增加原理: 系统经一过程由初态$A$变为终态$B$, 则有(推导见课本P55)
+\[
+S_B-S_A=\int_A^B\frac{\textrm{d}\!\!\!^-Q}{T}\Rightarrow
+S_B-S_A\geq 0
+\]
+上式指出, 经过绝热过程后, 系统的熵永不减少, 等号适用于可逆过程, 不等号适用于不可逆过程. 因此系统在绝热条件下熵减少的过程是不可能实现的. 这个结论称为熵增加原理. 
+\end{itemize}
+
+\subsection{自由能和吉布斯函数}
+系统由等温过程由初态$A$到达终态$B$, 两态熵满足: $S_B-S_A\leq\frac{Q}{T}$. 又根据热力学第一定律, $U_B-U_A=Q+W$有
+\[
+S_B-S_A\leq\frac{U_B-U_A-W}{T}
+\]
+为简化上式, 我们引进一个新的态函数:
+\[F=U-TS\]
+称为自由能, 则前式可简化为
+\[
+F_A-F_B\leq-W
+\]
+上式表明, 在等温过程中, 系统对外界所作的功$-W$不大于其自由能的减少. 
+换句话说, 系统自由能的减少是在等温过程中从系统所能获得的最大功. 
+这个结论称为最大功定理. 
+
+%=================================第二章===========================================
+\section{均匀物质的热力学性质}
+\subsection{四个特性函数的全微分}
+\begin{itemize}
+\item 热力学的基本方程, 即内能的全微: $\textrm{d}U=T\textrm{d}S-p\textrm{d}V$
+\item 由焓的定义$H=U+pV$, 可得焓的全微分: $\textrm{d}H=T\textrm{d}S+V\textrm{d}p$
+\item 由自由能定义$F=U-TS$, 可得自由能的全微分: $\textrm{d}F=-S\textrm{T}-p\textrm{d}V$
+\item 由吉布斯函数定义$G=U-Ts+pV$, 可得其全微分: $\textrm{d}G=-S\textrm{d}T+V\textrm{d}p$
+\end{itemize}
+
+\subsection{麦氏关系}
+麦氏关系的四个表达式: 
+\[
+\Big(\frac{\partial T}{\partial V}\Big)_S=-\Big(\frac{\partial p
+}{\partial S}\Big)_V, \ \ \ \Big(\frac{\partial T}{\partial
+p}\Big)_S=-\Big(\frac{\partial V }{\partial S}\Big)_p
+\]
+\[
+\Big(\frac{\partial S}{\partial V}\Big)_T=-\Big(\frac{\partial p
+}{\partial T}\Big)_V, \ \ \ \Big(\frac{\partial S}{\partial
+p}\Big)_T=-\Big(\frac{\partial V }{\partial T}\Big)_p
+\]
+
+\subsection{气体的节流过程和绝热膨胀过程}
+p77
+
+\subsection{能态函数}
+\subsection{平衡辐射场与温度体积的关系}
+将空窖辐射看作热力学系统, 选温度$T$与体积$V$为状态参量, 空窖辐射的内能$U(T,V)$可以表示为
+\[
+U(T,V)=u(T)V
+\]
+利用热力学公式
+\[
+\Big(\frac{\partial U}{\partial V}\Big)_T=T\Big(\frac{\partial p
+}{\partial T}\Big)_V-p
+\]
+可得
+\[
+u=\frac{T}{3}\frac{\textrm{d}u}{\textrm{d}T}-\frac{u}{3} \ \
+\textrm{即} \ \ T\frac{\textrm{d}u}{\textrm{d}T}=4u
+\]
+积分得
+\[
+u=aT^4
+\]
+其中$a$是积分常数, 上式指出空窖辐射的能量密度与绝对温度$T$的四次方成正比. 
+
+现求空窖辐射的熵, 将上式的$u$和$p=\frac{1}{3}u$(由列别节夫的实验可证明得到)代入热力学基本方程$\textrm{d}S=\frac{\textrm{d}U+p\textrm{d}V}{T}$可有
+\[
+\textrm{d}S=\frac{1}{T}\textrm{d}(aT^4V)+\frac{1}{3}aT^3\textrm{d}V=4aT^2V\textrm{d}T+\frac{4}{3}aT^3\textrm{d}V=\frac{4}{3}a\textrm{d}(VT^3)
+\]
+积分可得
+\[
+S=\frac{4}{3}aT^3V
+\]
+积分中没有常数, 因为$V=0$时就不存在辐射场了. 在可逆绝热过程中辐射场的熵不变, 这时有
+\[
+T^3V=\textrm{常量}
+\]
+
+\subsection{磁介质系统的热力学基本方程}
+当热力学系统中只包括介质而不包括磁场时, 功的表达式为
+\[
+\textrm{d}\!\!\!^-W=\mu_0\mathscr{H}\textrm{d}\mathit{m}
+\]
+其中$\mathit{m}=\mathscr{M}V$是介质的总磁矩, 如果忽略磁介质的体积变化, 磁介质的热力学基本议程为
+\[
+\textrm{d}U=T\textrm{d}S+\mu_0\mathscr{H}\textrm{d}\mathit{m}
+\]
+由吉布斯函数$G=U-TS-\mu_0\mathscr{H}\mathit{m}$, 微分可得
+\[
+\textrm{d}G=-S\textrm{d}T-\mu_0\mathit{m}\textrm{d}\mathscr{H}
+\]
+
+\subsection{绝热去磁效应}
+在绝热条件下减小磁场时, 磁介质的温度将降低, 这个效应称为绝热去磁致冷效应. 理论证明见P93-p94.
+
+\section{单元系的相变}
+\subsection{热动平衡判据}
+\begin{itemize}
+\item 孤立系统在稳定平衡状态的必要和充分条件为: 
+\[\Delta S<0\]
+泰勒展开, 准确到二级: $\Delta S=\delta
+S+\frac{1}{2}\delta^2S$, 当熵函数的一级微分$\delta
+S=0$, 熵有极值；当熵函数的一级微分$\delta
+S=0$, 二级微分$\delta^2S<0$, 熵有极大值. 由$\delta
+S=0$可以得到平衡条件, 由$\delta^2S<0$可以得到平衡的稳定性条件. 
+
+\item 等温等容的系统处在稳定平衡状态的必要和充分条件为
+\[
+\Delta F<0
+\]
+对于$\Delta F=\delta F+\frac{1}{2}\delta^2F$, 由$\delta
+F=0$和$\delta^2F>0$可以确定平衡条件和平衡的稳定性条件. 
+\item 等温等压的系统处在稳定平衡状态的必要和充分条件为
+\[
+\Delta G>0
+\]
+对于$\Delta G=\delta G+\frac{1}{2}\delta^2G$, 由$\delta
+G=0$和$\delta^2G>0$可以确定平衡条件和平衡的稳定性条件. 
+\end{itemize}
+
+\subsection{吉布斯函数与摩尔Ｇ函数的关系}
+由于吉布斯函数是广延量, 系统的吉布斯函数等于物质量$n$与摩尔吉布斯函数$G_m(T,p)$之积: 
+\[
+G(T,p,n)=nG_m(T,p)
+\]
+
+\subsection{化学势和巨热力势}
+$\mu$称为化学势, 它等于在温度和压强保持不变的条件下, 增加1mol物质时吉布斯函数的改变. 化学势等于摩尔吉布斯函数
+\[
+\mu=\Big(\frac{\partial G}{\partial n}\Big)_{T,p}=G_m
+\]
+定义$J$为巨热力势: 
+\[J=F-\mu n　\ \ \textrm{也可表示为: }  J=F-G=-pV\]
+它的全微分为
+\[
+\textrm{d}J=-S\textrm{d}T-p\textrm{d}V-n\textrm{d}\mu
+\]
+
+\subsection{单元系的复相平衡条件}
+考虑一个单元两相系, 构成一个孤立系统. 用$\alpha$和$\beta$表示两相, 它的总内能, 总体积和总物质的量应是恒定的, 即
+\[
+U^\alpha+U^\beta=\textrm{常量};　\ \
+V^\alpha+V^\beta=\textrm{常量};　\ \
+n^\alpha+n^\beta=\textrm{常量}　
+\]
+设想一虚变动, $\alpha$和$\beta$相的内能, 体积和物质的量分别发生虚变动
+$\delta U^\alpha $, $\delta V^\alpha$, $\delta n^\alpha$ 和
+$\delta U^\beta$, $\delta V^\beta$, $\delta
+n^\beta$, 孤立系条件要求
+\[
+\delta U^\alpha+\delta U^\beta=0; \ \ \delta V^\alpha+\delta
+V^\beta=0; \ \ \delta n^\alpha+\delta n^\beta=0 \ \
+\]
+可得两相的熵变\footnote{对于开系有$\textrm{d}G=-S\textrm{d}T+V\textrm{d}p+\mu\textrm{d}n
+$, 见课本P108}分别为
+\[
+\delta S^\alpha=\frac{\delta U^\alpha+p^\alpha\delta
+V^\alpha-\mu^\alpha\delta n^\alpha}{T^\alpha}=0; \ \ \delta
+S^\beta=\frac{\delta U^\beta+p^\beta\delta V^\beta-\mu^\beta\delta
+n^\beta}{T^\beta}=0;
+\]
+根据熵的广延性质, 整个系统的熵变是
+\[
+\delta S=\delta S^\alpha+\delta S^\beta=\delta
+U^\alpha\Big(\frac{1}{T^\alpha}-\frac{1}{T^\beta}\Big)+\delta
+V^\alpha
+\Big(\frac{p^\alpha}{T^\alpha}-\frac{p^\beta}{T^\beta}\Big)-\delta
+n^\alpha\Big(\frac{\mu^\alpha}{T^\alpha}-\frac{\mu^\beta}{T^\beta}\Big)
+\]
+整个系统达到平衡时, 总熵有极大值, 必有
+\[
+\delta S=0
+\]
+因为整个系统的熵变中$\delta U^\alpha$, $\delta V^\alpha$, $\delta
+n^\alpha$是可以独立改变的, $\delta S=0$要求
+\[
+\frac{1}{T^\alpha}-\frac{1}{T^\beta}=0; \ \
+\frac{p^\alpha}{T^\alpha}-\frac{p^\beta}{T^\beta}=0; \ \
+\frac{\mu^\alpha}{T^\alpha}-\frac{\mu^\beta}{T^\beta}=0;
+\]
+即
+\[
+T^\alpha=T^\beta; \ \ p^\alpha=p^\beta; \ \ \mu^\alpha=\mu^\beta;
+\]
+上式指出, 整个系统达到平衡时, 两相的温度, 压强和化学势必须分别相等. 这就是单元复相系达到平衡所要满足的平衡条件. 
+
+\subsection{克拉珀龙方程}
+单元系三相共享时, 三相的温度, 压强和化学势势都必须相等, 即
+\[
+T^\alpha=T^\beta=T^\gamma=T
+\]
+\[
+p^\alpha=p^\beta=p^\gamma=p
+\]
+\[
+\mu^\alpha(T,p)=\mu^\beta(T,p)=\mu^\gamma(T,p)
+\]
+设$(T,P)$和$(T+\textrm{d}T,p+\textrm{d}p)$是两相平衡曲线上邻近的两点. 在这两点上, 两相的化学势都相等: 
+\[
+\mu^\alpha(T,p)=\mu^\beta(T,p)
+\]
+\[
+\mu^\alpha(T+\textrm{d}T,p+\textrm{d}p)=\mu^\beta(T+\textrm{d}T,p+\textrm{d}p)
+\]
+两式相减, 得
+\[
+\textrm{d}\mu^\alpha=\textrm{d}\mu^\beta
+\]
+上式表示, 当沿着平衡曲线由$(T,p)$变到$(T+\textrm{d}T,p+\textrm{d}p)$时, 两相的化学势的变化相等, 化学势的全微分为
+$\textrm{d}\mu=-S_m\textrm{d}T+V_m\textrm{d}p$. 
+其中$S_m$和$V_m$分别是摩尔熵和摩尔体积, 代入上式得
+\[
+-S_m^\alpha\textrm{d}T+V_m^\alpha\textrm{d}p=-S_m^\beta\textrm{d}T+V_m^\beta\textrm{d}p
+\]
+或　
+\[
+\frac{\textrm{d}p}{\textrm{d}T}=\frac{S^\beta_m-S^\alpha_m}{V^\beta_m-V^\alpha_m}
+\]
+以$L$表示1mol物质由$\alpha$相转到$\beta$相时所吸收的相变潜热, 因为相变时物质的温度不变, 有$L=T(S_m^\beta-S_m^\alpha)$, 代入上式, 得
+\[
+\frac{\textrm{d}p}{\textrm{d}T}=\frac{L}{T(V_m^\beta-V_m^\alpha)}
+\]
+上式称为克拉珀龙方程, 它给出了两相平衡曲线的斜率. 
+
+%==================五, 临界点的
+
+\subsection{液滴的形成}
+设液滴为$\alpha$相, 蒸气为$\beta$相, 表面为$\gamma$相. 三相的热力学基本方程分别为
+\[
+\textrm{d}U^\alpha=T^\alpha\textrm{d}S^\alpha-p^\alpha\textrm{d}V^\alpha+\mu^\alpha\textrm{d}n^\alpha
+\]
+\[
+\textrm{d}U^\beta=T^\beta\textrm{d}S^\beta-p^\beta\textrm{d}V^\beta+\mu^\beta\textrm{d}n^\beta
+\]
+\[
+\textrm{d}U^\gamma=T^\gamma\textrm{d}S^\gamma+\sigma\textrm{d}A
+\]
+
+热力学中, 把表面理想为几何面, 因此表面相的物质的量$n^\gamma=0$. 系统热平衡条件: 
+\[
+T^\alpha=T^\beta=T^\gamma
+\]
+设想在温度和总体积不变的条件下, 系统发生一个虑变动. 三相的物质的量, 体积和面积分别有$\delta
+n^\alpha$, $\delta V^\alpha$；$\delta n^\beta$, $\delta
+V^\beta$；$\delta
+A$的变化, 由于在虑变动中系统的总物质的量和总体积保持不变, 因此有
+\[
+\delta n^\alpha+\delta n^\beta=0; \ \ \ \delta V^\alpha+\delta
+V^\beta=0
+\]
+在这虚变动中, 三相自由能的变化为
+\[
+\delta F^\alpha=-p^\alpha\delta V^\alpha+\mu^\alpha\delta n^\alpha
+\]
+\[
+\delta F^\beta=-p^\beta\delta V^\beta+\mu^\beta\delta n^\beta
+\]
+\[
+\delta F^\gamma=\sigma\delta A
+\]
+在三相温度相等的条件下, 整个系统的自由能是三相的自由能之和, 整个系统自由能变化
+\[
+\delta F=\delta F^\alpha+\delta F^\beta+\delta
+F^\gamma=-(p^\alpha-p^\beta)\delta V^\alpha+\sigma\delta
+A+(\mu^\alpha-\mu^\beta)\delta n^\alpha
+\]
+
+如果假定液滴是球形的, 有
+
+\[
+V^\alpha=\frac{4\pi}{3}r^3, \ \ A=4\pi r^2
+\]
+\[
+\delta V^\alpha=4\pi r^2\delta r, \ \ \delta A^\alpha=8\pi r\delta
+r
+\]
+则整个系统自由能变化可化为
+\[
+\delta F=-\Big(p^\alpha-p^\beta-\frac{2\sigma}{r}\Big)\delta
+V^\alpha+(\mu^\alpha-\mu^\beta)\delta n^\alpha
+\]
+根据自由能判据, 在温度和总体积不变的条件下, 平衡态的自由能最小, 必有$\delta
+F=0$. 因为$\delta V^\alpha$和$\delta n^\alpha$是任意的, 所以有
+\[
+p^\alpha=p^\beta+\frac{2\sigma}{r}, \ \ \ \mu^\alpha=\mu^\beta
+\]
+上式是力学平衡条件, 它指出, 由于表面张力有使液滴收缩的趋势, 液滴的压强必须大于蒸气的压强才能维持力学平衡. 
+
+\subsection{液滴半径的讨论P127}
+在一定的蒸气压强下$p'$下, 与蒸气达到平衡的液滴半径$r_c$为
+\[
+r_c=\frac{2\sigma v^\alpha}{RT\ln\frac{p'}{p}}
+\]
+$r_c$称为中肯半径. 由上式可以看出, 对于$r>r_c$的液滴, 有$\mu^\alpha<\mu^\beta$, 因而液滴将继续凝结而增大, 
+对于$r<r_c$的液滴, 有$\mu^\alpha>\mu^\beta$, 因而液滴将气化而消失. 
+
+\subsection{一级, 二级相变}
+\begin{itemize}
+\item 一级相变: 在相变点两相的化学势连续, 但化学势的一级偏导数存在突变: 
+\[
+\mu^{(1)}(T,p)=\mu^{(2)}(T,p)
+\]
+\[
+\frac{\partial\mu^{(1)}}{\partial
+T}\neq\frac{\partial\mu^{(2)}}{\partial T}, \ \ \
+\frac{\partial\mu^{(1)}}{\partial
+p}\neq\frac{\partial\mu^{(2)}}{\partial p}
+\]
+
+\item 二级相变: 相变点两相的化学势和化学势的一级偏导数连续, 但化学势的二级偏导数存在突变, 称为二级相变. 因为
+\[
+c_p=T\Big(\frac{\partial s}{\partial
+T}\Big)_p=-T\frac{\partial^2\mu}{\partial T^2}
+\]
+\[
+\alpha=\frac{1}{v}\Big(\frac{\partial v}{\partial
+T}\Big)_p=\frac{1}{v}\frac{\partial^2\mu}{\partial T\partial p}
+\]
+\[
+\kappa_T=-\frac{1}{v}\Big(\frac{\partial v}{\partial
+p}\Big)_T=-\frac{1}{v}\frac{\partial^2\mu}{\partial p^2}
+\]
+\end{itemize}
+
+\section{多元系的复相平衡的化学平衡}
+
+%一, 偏摩尔量4.1.8  P148  4.1.15  4.1.16
+%二, 多元系的复相平衡条件　4.2.4 三, P151. 4.3.6
+%八, 三定律的两种表达形式成立的条件 绝对熵的表达式P172
+%　　等温过程, 节流, 自由膨胀, 量子态数的计算, 相律肯定考　　玻色子
+
+\subsection{偏摩尔量}
+\begin{itemize}
+\item 选$T,p,n1,\cdots,n_k$为状态参量, 系统的三个基本热力学函数体积, 内能, 熵分别为
+\[
+V=V(T,p,n1\cdots n_k); \ \ U=U(T,p,n1\cdots n_k); \ \
+S=S(T,p,n1\cdots n_k)
+\]
+如果保持系统的温度和压强不变, 令系统中各组份都增为$\lambda$倍, 则有
+\[
+V=V(T,p,\lambda n1\cdots \lambda n_k)=\lambda V(T,p,n1\cdots n_k)
+\]
+\[
+U=U(T,p,\lambda n1\cdots \lambda n_k)=\lambda U(T,p,n1\cdots n_k)
+\]
+\[
+S=S(T,p,\lambda n1\cdots \lambda n_k)=\lambda S(T,p,n1\cdots n_k)
+\]
+由欧勒定理可知: 
+\[
+V=\sum_in_i\Big(\frac{\partial V}{\partial n_i}\Big)_{T,p,n_j}, \
+\ U=\sum_in_i\Big(\frac{\partial U}{\partial n_i}\Big)_{T,p,n_j},
+\ \ S=\sum_in_i\Big(\frac{\partial S}{\partial n_i}\Big)_{T,p,n_j}
+\]
+定义
+\[
+v_i=\Big(\frac{\partial V}{\partial n_i}\Big)_{T,p,n_j}, \ \
+u_i=\Big(\frac{\partial U}{\partial n_i}\Big)_{T,p,n_j}, \ \
+s_i=\Big(\frac{\partial S}{\partial n_i}\Big)_{T,p,n_j}
+\]
+$v_i,u_i,s_i$分别称为$i$组元的偏摩尔体积, 偏摩尔内能和偏摩尔熵. 它们的物理意义是, 在保持温度, 压强和其它组元物质的量不变的条件下, 增加1mol的$i$组元物质时, 系统的体积(内能, 熵)r
+增量. 
+\item 同样, 对于广延量熵有
+\[
+G=\sum_in_i\Big(\frac{\partial G}{\partial
+n_i}\Big)_{T,p,n_j}=\sum_in_i\mu_i
+\]
+其中$\mu_i$是$i$组元的偏摩尔吉布斯函数. 
+\item 对于多元复相系, 每一个相各有其热力学函数和热力学基本方程, 如$\alpha$相有
+\[
+\textrm{d}U^\alpha=T^\alpha\textrm{d}S^\alpha-p^\alpha\textrm{d}V^\alpha+\sum_i\mu_i^\alpha\textrm{d}n_i^\alpha
+\]
+\item 根据体积, 内能, 熵和物质的量的广延性质, 整个复相系统的体积, 内能, 熵和$i$组元的物质的量为
+\[
+V=\sum_\alpha V^\alpha, \ \ U=\sum_\alpha U^\alpha
+\]
+\[
+S=\sum_\alpha S^\alpha, \ \ n_i=\sum_\alpha n_i^\alpha
+\]
+\end{itemize}
+
+\subsection{多元系的复相平衡条件}
+设两相$\alpha$和$\beta$都含$k$个组元, 并设热平衡和力学平衡条件已满足, 则多元系的相变平衡条件为
+\[
+\mu_i^\alpha=\mu_i^\beta \ \ \ (i=1,2,\cdots,k)
+\]
+它指出整个系统达到平衡时, 两相中各组元的化学势必须分别相等. 
+
+\subsection{吉布斯相律}
+多元复相系有$\varphi$个相, 每个相有$k$个组元, 则总数为$(k+1)\varphi$个的强度量中可以独立改变的只有$f$个(证明见: 课本P150): 
+\[
+f=(k+1)\varphi-(k+2)(\varphi-1) \ \ \textrm{即:} f=k+2-\varphi
+\]
+上式称为吉布斯相律. $f$称为多元复相系的自由度数, 是多元复相系可以独立改变的强度量变量的数. 
+
+\subsection{三定律的两种表达形式成立的条件p170}
+通常认为, 能氏定理和绝对零度不能达到原理是热力学第三定律的两种表述: 
+\begin{enumerate}
+\item 能氏定理: 凝聚系的熵在等温过程中的改变随绝地温度趋于零, 即
+\[
+\lim_{T\rightarrow0}(\Delta S)_T=0
+\]
+其中$(\Delta S)_T$指在等温过程中熵的改变
+\item 绝对零度不能达到原理: 不可能使一个物体冷却到绝对温度的零度. 
+\end{enumerate}
+
+\subsection{绝对熵的表达式P172}
+以绝对零度为参考态, 熵$S(T,V)$可表为
+\[
+S(T,V)=\int_0^T\frac{C_V}{T}\textrm{d}T
+\]
+
+
+\section{近独立粒子的最概然分布}
+\subsection{$\mu$空间及代表点和轨道}
+为了形象地描述粒子的力学运动状态, 用$q_1,\cdots,q_r;$, $p_1,\cdots,p_r$共$2r$个变量为直角坐标, 构成一个$2r$维空间, 称为\textbf{$\mu$空间}.
+
+粒子在某一时刻的力学运动状态($q_1,\cdots,q_r$;
+$p_1,\cdots,p_r$)可以用$\mu$空间中的一点表示, 称为粒子力学运动状态的\textbf{代表点}. 
+
+当粒子的运动状态随时间改变时, 代表点相应地在$\mu$空间中移动, 描画出一条\textbf{轨道}. 
+
+\subsection{自由粒子和线性谐振子}
+
+\begin{itemize}
+\item 自由粒子是不受力的作用而作自由运动的粒子. 不存在外场时, 理想气体的分子或金属的自由电子都可近似看作自由粒子. 
+
+当粒子在三维空间运动时, 它的自由度为3. 粒子任一时刻位置可由$x$, $y$, $z$确定, 动量为
+\[
+p_x=m\cdot{x}, \ \ p_y=m\cdot{y}, \ \ p_z=m\cdot{z}
+\]
+自由粒子的能量是其本身的动能
+\[
+\varepsilon=\frac{1}{2m}(p_x^2+p_y^2+p_z^2)
+\]
+\item 对于自由度为1的一维线性谐振子, 在任一时刻, 粒子的位置由它的位移$x$确定, 动量为$p=m\cdot{x}$. 它的能量是其动能和势能之和: 
+\[
+\varepsilon=\frac{p^2}{2m}+\frac{A}{2}x^2=\frac{p^2}{2m}+\frac{1}{2}m\omega^2x^2
+\]
+代表点在$\mu$空间中轨道是上式确定的一个椭圆, 其标准形式: 
+\[
+\frac{p^2}{2m\varepsilon}+\frac{x^2}{\frac{2\varepsilon}{m\omega^2}}=1
+\]
+\end{itemize}
+
+\subsection{什么叫系统的微观运动状态－气体的力学运动状态}
+\subsection{玻色子和费米子}
+自然界中微观粒子可分为两类: 
+\begin{itemize}
+\item 玻色子: 自旋量子数为半整数的“基本”粒子. 如电子, $\mu$子, 质子, 中子等. 
+\item 费米子: 自旋量子数为整数的“基本”粒子. 如光子, $\pi$介子等. 
+\end{itemize}
+
+\subsection{等概率原理}
+
+等概率原理: 对于处在平衡状态的孤立系统, 系统各个可能的微观状态出现的概率是相等的. 等概率原理是平衡态统计物理的基本假设. 
+
+\subsection{玻色和费米系统的与分布$\{a_l\}$相应的微观状态数}
+\begin{itemize}
+\item 玻色系统与分布$\{a_l\}$相应的微观状态数为
+\[
+\Omega_{B.F.}=\prod_l\frac{(\omega_l+a_l-1)!}{a_l!(\omega_l-1)!}
+\]
+\item 费米系统与分布$\{a_l\}$相应的微观状态数为
+\[
+\Omega_{F.D.}=\prod_l\frac{\omega_l!}{a_l!(\omega_l-a_l)!}
+\]
+\end{itemize}
+
+\subsection{三种分布的关系}
+
+\begin{itemize}
+\item 玻耳兹曼分布
+\[
+a_l=\omega_le^{-\alpha-\beta\varepsilon_l}
+\]
+\item 玻色分布
+\[
+a_l=\frac{\omega_l}{e^{\alpha+\beta\varepsilon_l}-1}
+\]
+\item 费米分布
+\[
+a_l=\frac{\omega_l}{e^{\alpha+\beta\varepsilon_l}+1}
+\]
+\end{itemize}
+
+其中参数$\alpha$和$\beta$由下述条件确定: 
+\[
+\sum_la_l=N, \ \ \ \sum_l\varepsilon_la_l=E
+\]
+
+\textbf{三种分布的关系:}
+如果参数$\alpha$满足条件: $e^\alpha\gg1$时, 玻色和费米分布中分母中的$\pm1$就可以忽略, 这时玻色分布式和费米分布式都过渡到玻耳兹曼分布. 
+
+当以下关系
+\[\frac{a_l}{\omega_l}\ll1 \ \ \ (\textrm{对所有}l)\]
+得到满足时, 有
+\[
+\Omega_{B.E.}\approx\frac{\Omega_{M.B.}}{N!}\approx\Omega_{F.D.}
+\]
